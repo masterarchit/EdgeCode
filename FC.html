@@ -1,0 +1,94 @@
+<div id="FogComputing" class="theme-dark-bg  page-container">
+    <div class="page container">
+        <div class="page--title">
+            
+            <h1 > FPGS-CSRmesh (FC) / Fog Computing (FC) Demo </h1>
+            
+        </div>
+ <!--       <section class="section dark">
+            <div class="section--title">
+                <h4> Introduction </h4>
+            </div>
+            <div class="section--content">
+                <p> <img src="./Doc/Research/layer.jpg" vspace=0 hspace=15 style="height:350px;float:right;"/> </p>
+                
+                <p> This demo shows a novel <b> field-programming gate array (FPGA) and CSRmesh (FC) integrated system </b> in the field of edge/fog computing. Combining the merits of 1) <b> programmability of FPGAs, </b> and 2) <b> large-area communication and low-energy consumption of CSRmesh technology </b>, this platform will create a diverse range of applications such as data filtering and approximate computation at the network edge, as well as showing an effective solution to <b> smart building, industrial IoT (IIoT), smart agriculture, etc. </b> </p>
+                    
+                <p> By integrating FPGAs, the edge/fog node can offer a great potential for flexible acceleration of many workloads and improve power efficiency with more hardware parallelism at slower clock frequency than CPUs and GPUs. These advantages are going to move FPGAs into the mainstream of fog computing for the foreseeable future.
+                </p>
+                
+                <p> The main contributions of this demo are 1) <b> Self-manufactured CSRMesh boards:</b> Since Bluetooth is pervasive in billions of existing devices, we believe that Bluetooth Low Energy (BLE) mesh will become one of the dominant solutions for large-area and low-power communication, even though the mesh technology is not standardized yet and only a few venders like CSR/QUALCOMM provide such chips. 2) <b> The integration of traditional edge/fog servers with FPGA </b> is one of the keys to design a new generation of products to address emerging workloads in IoT. </p>
+                
+                <div class="section--content">
+                <p> <li> <b> UHCL IoT Mesh Spec: </b> <a href="./Doc/Research/CSRMesh_UHCL_Spec.pdf" style="font-size:16px;color:#D58C42"> UHCL IoT Mesh Spec </a> </li> </p>
+                <p> <li> <b> Demo Abstract #1: </b> <b> X. Yang </b>, X. He, <a href="./Doc/Publication/SEC2017_Yang.pdf" style="font-size:16px;color:#D58C42">
+                    "Establishing a BLE Mesh Network using Fabricated CSRmesh Devices," </a>
+                    SEC2017.  </li> </p>
+                <p> <li> <b> Demo Abstract #2: </b> A. Gajjar, Y. Zhang, <b> X. Yang </b>, <a href="./Doc/Publication/SEC2017_AGajjar.pdf" style="font-size:16px;color:#D58C42">
+                    "A Smart Building System Integrated with An Edge Computing Algorithm and IoT Mesh Networks," </a>
+                    SEC2017.  </li> </p>
+                </div> 
+                
+                <p> <img src="./Doc/Research/boards1.jpg" vspace=50 hspace=10 style="height:180px;float:right;"/> </p>
+            </div>
+        </section> -->
+        
+        <section class="section dark">
+            <div class="section--title">
+                <h4> FC System Demo. </h4>
+                <div class="section--content"> 
+                <p> Please contact Dr. Xiaokun Yang (yangxia@uhcl.edu) for the FC system demo. </p> 
+                <!-- <p> <li> IoT Mesh -- Feedback Control System Demo: <a href="https://youtu.be/R1lmSYyWHyY" style="font-size:16px;color:#D58C42"> CSRMesh </a> </li> </p>
+                <p> <li> IoT Mesh -- Local Control Demo : <a href="https://youtu.be/JwzJZEywwa0" style="font-size:16px;color:#D58C42"> Local Control Network </a> </li> </p>
+                <p> <li> IoT Mesh -- GoKit Cloud Control Demo: <a href="https://youtu.be/j5rSt6RcBCM" style="font-size:16px;color:#D58C42"> Cloud Control Network </a> </li> </p>
+                <p> <li> Fog-FPGA Integration Demo (TBA): <a href="" style="font-size:16px;color:#D58C42"> Fog-FPGA Computation Network </a> </li> </p> -->
+                </div>
+                
+                <form>
+                    <fieldset>
+                        <legend>Static control:</legend>
+                        <div class="section--content">
+                          <p>
+                            <input type = "radio"
+                             name = "radSize"
+                             id = "Red"
+                             value = "Red"
+                             onclick="changeColor('Red');" />
+                          <label for = "sizeSmall">Red</label>
+                            <input type = "radio"
+                             name = "radSize"
+                             id = "Green"
+                             value = "Green" onclick="changeColor('Green');"/>
+                          <label for = "sizeMed">Green</label>
+                            <input type = "radio"
+                             name = "radSize"
+                             id = "Blue"
+                             value = "Blue" onclick="changeColor('Blue');"/>
+                          <label for = "sizeLarge">Blue</label>
+                          </p>  
+                          
+                          <p>
+                            <input type = "radio"
+                             name = "radSize"
+                             id = "MotorOn"
+                             value = "MotorOn"
+                             onclick="changeMotor('MotorOn');" />
+                          <label for = "sizeSmall">MotorOn</label>
+                            <input type = "radio"
+                             name = "radSize"
+                             id = "MotorOff"
+                             value = "MotorOff" onclick="changeColor('MotorOff');"/>
+                          <label for = "sizeMed">MotorOff</label>
+                          </p>
+                        </div>
+                    </fieldset>     
+                </form>
+                <legend>Static sensing the enviroment:</legend>
+                <div class="section--content"> 
+                    <p> Below shows the data from one of the thermal/humidity sensors in the FC system </p>
+                </div>
+                <iframe src="/Pages/Data_FC.html" frameborder="0" width="100%" height="1000" scrolling="yes" style="overflow: hidden"> </iframe>
+            </div>  
+        </section>        
+    </div>
+</div>
